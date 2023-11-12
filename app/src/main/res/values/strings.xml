@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Laza(E-commerce)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="look">Look Good,Feel Good</string>
+    <string name="create">Create your individual&amp;unique style and\nlook amazing everyday.</string>
+    <string name="Men">Men</string>
+    <string name="Women">Women</string>
+    <string name="Skip">Skip</string>
+    <string name="started">Let\'s Get Started</string>
+    <string name="facebook">Facebook</string>
+    <string name="Twitter">Twitter</string>
+    <string name="Google">Google</string>
+    <string name="already">Already have an account?</string>
+    <string name="SignIn">Signin</string>
+    <string name="createAccount">Create an Account</string>
+    <string name="welcome">Welcome</string>
+    <string name="enter">Please enter your data to continue</string>
+    <string name="user">Username</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember me</string>
+    <string name="by">By connecting your account confirm that you agree\nwith our Term and Condition</string>
+    <string name="terms">Terms and Condition</string>
+    <string name="login">Login</string>
+    <string name="forget">Forgot password?</string>
+    <string name="register">Sign Up</string>
+    <string name="email">Email Address</string>
+</resources>
