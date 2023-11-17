@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.ruhlanusubov.lazae_commerce.R
 import com.ruhlanusubov.lazae_commerce.databinding.FragmentSplashBinding
 import com.ruhlanusubov.lazae_commerce.databinding.FragmentStartBinding
@@ -28,8 +29,15 @@ class StartFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-     }
+        setup()
+    }
+    private fun setup(){
+        with(binding){
+            skipBtn.setOnClickListener {
+                findNavController().navigate(StartFragmentDirections.actionStartFragmentToGetStartedFragment())
+            }
+        }
+    }
 
     override fun onDestroy() {
         super.onDestroy()

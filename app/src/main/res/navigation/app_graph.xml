@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/splashFragment"
@@ -20,5 +20,31 @@
         android:id="@+id/startFragment"
         android:name="com.ruhlanusubov.lazae_commerce.presentation.ui.start.StartFragment"
         android:label="fragment_start"
-        tools:layout="@layout/fragment_start" />
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_getStartedFragment"
+            app:destination="@id/getStartedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/getStartedFragment"
+        android:name="com.ruhlanusubov.lazae_commerce.presentation.ui.start.GetStartedFragment"
+        android:label="fragment_get_started"
+        tools:layout="@layout/fragment_get_started" >
+        <action
+            android:id="@+id/action_getStartedFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_getStartedFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ruhlanusubov.lazae_commerce.presentation.ui.validation.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.ruhlanusubov.lazae_commerce.presentation.ui.validation.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
 </navigation>

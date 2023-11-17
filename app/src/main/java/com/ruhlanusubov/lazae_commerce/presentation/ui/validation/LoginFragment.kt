@@ -21,7 +21,7 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding= FragmentLoginBinding.inflate(inflater,container,false)
         return binding.root
     }
@@ -32,6 +32,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun setup(){
+        /*
         with(binding){
 
             val text=terms.text
@@ -52,6 +53,8 @@ class LoginFragment : Fragment() {
             terms.text=spannableString
             terms.movementMethod=LinkMovementMethod.getInstance()
         }
+
+         */
     }
 
     override fun onDestroy() {
